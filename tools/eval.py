@@ -71,6 +71,9 @@ if opt.only_lang_eval == 1 or (not opt.force and os.path.isfile(pred_fn)):
             pass
 
     predictions, n_predictions = torch.load(pred_fn)
+    if opt.dump_json == 1:
+        # dump the json
+        json.dump(predictions, open('vis/vis.json', 'w'))
     lang_stats = eval_utils.language_eval(opt.input_json, predictions, n_predictions, vars(opt), opt.split)
     print(lang_stats)
     os._exit(0)
