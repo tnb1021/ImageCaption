@@ -11,6 +11,9 @@ It supports:
 
 A simple demo colab notebook is available [here](https://colab.research.google.com/github/ruotianluo/ImageCaptioning.pytorch/blob/colab/notebooks/captioning_demo.ipynb)
 
+## CUBデータセットの準備
+download from `https://docs.google.com/uc?id=0B0ywwgffWnLLZW9uVHNjb2JmNlE&export=download` and `https://data.caltech.edu/records/20098`
+
 ## Requirements
 - Python 3
 - PyTorch 1.3+ (along with torchvision)
